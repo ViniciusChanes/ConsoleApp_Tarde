@@ -1,4 +1,5 @@
 ﻿using ConsoleApp_Tarde;
+using ConsoleApp_Tarde.Heranca;
 
 Produto p1 = new Produto(1, "Mouse xing ling", 10.90M);
 Produto p2 = new Produto(2, "Teclado multilase", 20.90M);
@@ -33,6 +34,23 @@ c1.getEndereco().AtualizarEndereco("Julio de Moraes", 585, "Portal Itamaraca");
 Console.WriteLine(c1.getEndereco().EnderecoCompleto());
 
 
+Carro car = new Carro();
+car.cor = "Vermelho";
+car.quantidadeRodas = 4;
+car.quantidadeAssentos = 5;
+car.TemMotor = true;
+
+Bike bicicleta = new Bike();
+bicicleta.cor = "Azul";
+bicicleta.quantidadeRodas = 2;
+bicicleta.quantidadeAssentos = 1;
+bicicleta.TemMotor = false;
+
+Aviao boing = new Aviao();
+boing.cor = "Branco";
+boing.quantidadeRodas = 18;
+boing.quantidadeAssentos = 336;
+boing.TemMotor = true;
 
 
 
