@@ -59,5 +59,12 @@ namespace ConsoleApp_Tarde
         {
             Telefone = telefone;
         }
+
+        public string ClienteCompleto()
+        {
+
+            return "ID: " + ID + " Nome: " + Nome + " Telefone: " + Telefone + " Endereco: " + Endereco.EnderecoCompleto();
+
+        }
     }
 }

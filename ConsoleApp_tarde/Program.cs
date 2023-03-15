@@ -1,5 +1,6 @@
 ﻿using ConsoleApp_Tarde;
 using ConsoleApp_Tarde.Heranca;
+using System.Runtime.InteropServices;
 
 Produto p1 = new Produto(1, "Mouse xing ling", 10.90M);
 Produto p2 = new Produto(2, "Teclado multilase", 20.90M);
@@ -67,3 +68,35 @@ foreach (var item in veiculoLista)
 Console.WriteLine("Qtd i" +
     "tens da lista: " + veiculoLista.Count);
 
+Random rand = new Random();
+
+List<Produto> produtoLista = new List<Produto>();
+List<Cliente> clienteLista = new List<Cliente>();
+
+for (int i=0;i<rand.Next(200,500);i++)
+{
+    int aux = 0;
+    aux = i * 10;
+    Produto p = new Produto(i, "Teste", aux);
+    produtoLista.Add(p);
+   
+}
+
+for (int i = 0; i < rand.Next(150, 300); i++)
+{
+
+    int aux = i * 3;
+    Cliente c = new Cliente(aux, "Fernando", "123465", e1);
+    clienteLista.Add(c);
+
+}
+
+foreach (var item in produtoLista)
+{
+    Console.WriteLine(item.ProdutoCompleto());
+}
+
+foreach (var item in clienteLista)
+{
+    Console.WriteLine(item.ClienteCompleto());
+}
