@@ -11,13 +11,25 @@ namespace ConsoleApp_Tarde
     {
         public int ID;
         public string Nome;
-        public int Telefone;
+        public string Telefone;
+        private Endereco Endereco;
 
-        public Cliente(int id, string nome, int telefone)
+        public Cliente(int id, string nome, string telefone, Endereco endereco)
         {
             ID = id;
             Nome = nome;
             Telefone = telefone;
+            Endereco = endereco;
+        }
+
+        public void setEndereco(Endereco endereco)
+        {
+            Endereco = endereco;
+        }
+
+        public Endereco getEndereco()
+        {
+            return Endereco;
         }
 
         public int getID()
@@ -38,12 +50,12 @@ namespace ConsoleApp_Tarde
         {
             Nome = nome;
         }
-        public int getTelefone()
+        public string getTelefone()
         {
             return Telefone;
         }
 
-        public void setTelefone(int telefone)
+        public void setTelefone(string telefone)
         {
             Telefone = telefone;
         }
