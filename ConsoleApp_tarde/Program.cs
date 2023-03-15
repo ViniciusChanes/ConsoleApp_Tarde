@@ -52,34 +52,18 @@ boing.quantidadeRodas = 18;
 boing.quantidadeAssentos = 336;
 boing.TemMotor = true;
 
+List<Veiculo> veiculoLista = new List<Veiculo>();
+
+veiculoLista.Add(car);
+veiculoLista.Add(boing);
+veiculoLista.Add(bicicleta);
+
+foreach (var item in veiculoLista)
+{
+    Console.WriteLine(item.ExibirDados());
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Console.WriteLine("Qtd i" +
+    "tens da lista: " + veiculoLista.Count);
 

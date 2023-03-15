@@ -22,9 +22,9 @@ namespace ConsoleApp_Tarde.Heranca
             }
             else
             {
-                return return cor + " " + quantidadeAssentos + " " + quantidadeRodas;
+                return cor + " " + quantidadeAssentos + " " + quantidadeRodas;
             }
-            
+           
         }
 
     }
